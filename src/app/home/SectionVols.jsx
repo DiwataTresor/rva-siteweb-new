@@ -4,7 +4,7 @@ import { titrePrincipal } from '../style/global'
 import nouvelleTour  from '@/assets/nouvelleTour.jpg';
 import Image from "next/image"
 import DoubleImage from '../components/DoubleImage';
-import {bgSecondary} from "@/app/style/global.jsx"
+import {bgSecondary,bgPrimary} from "@/app/style/global.jsx"
 import fond from "@/assets/fond.png"
 
 import avion  from '@/assets/avion.jpeg';

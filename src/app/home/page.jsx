@@ -17,18 +17,20 @@ import modulaire from "@/assets/modulaire.jpeg";
 import modulaire2 from "@/assets/modulaire2.jpeg";
 import avion from "@/assets/avion.jpeg";
 import logoRva from "@/assets/logoRva.png";
-import { inter, lora, poiret, pignon, michroma } from "../style/fonts";
+import { inter, lora, poiret, poppins, michroma } from "../style/fonts";
 import { bgPrimary, bgSecondary, colorSecondary, colorPrimary,colorThird } from "../style/global";
 import SectionMotBienvenu from "./SectionMotBienvenu";
 import SectionMotDg from "./SectionMotDg";
+import SectionAccessoire from "./SectionAccessoire";
 
 const textSecondary = `text-[${bgSecondary}]`;
 
 function _Home() {
   return (
     <div>
-      <div className="h-[400px] bg-slate-100 mb-3">
-        <Swiper
+      <div className="h-[710px] bg-slate-100 mb-3">
+        <iframe src="http://localhost/root/sw/" className="h-[710px] w-full" />
+        {/* <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
@@ -46,8 +48,8 @@ function _Home() {
             <div className={styles2.slide}  style={{backgroundImage:'url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60")',backgroundSize:"cover"}}>
               <div className="flex-col w-full text-center justify-center items-center flex-1" style={michroma.style}>
                 <div
-                  className={`text-[40px] ${colorThird}`}
-                  style={lora.style}
+                  className={`text-[30px] ${colorThird}`}
+                  style={michroma.style}
                 >
                   Bienvenue à la RVA
                 </div>
@@ -58,7 +60,7 @@ function _Home() {
                   className="m-auto"
                   alt="logo"
                 />
-                <div className={`text-[60px]  text-2xl mt-6 ${colorPrimary}`}>
+                <div className={`text-[60px] mt-6 ${colorPrimary}`}>
                   Régie des Voies Aériennes
                 </div>
               </div>
@@ -67,9 +69,6 @@ function _Home() {
           <SwiperSlide>
             <div className={styles2.slide}>
               <div className="flex flex-row gap-4">
-                {/* <Image src={modulaire} className="h-[320px] -skew-x-12 flex-1 w-full " alt="logo" />
-            <Image src={modulaire2} className="h-[320px] -skew-x-12 flex-1 w-full" alt="logo" />
-            <Image src={nouvelleTour} className="h-[320px] -skew-x-12 flex-1 w-full" alt="logo" /> */}
                 <Image
                   src={avion}
                   className="h-[320px] rounded-lg flex-1 w-1/3 "
@@ -89,21 +88,24 @@ function _Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className={styles2.slide} style={{backgroundImage:'url("https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop")',backgroundSize:"cover"}}>
+            <div className={styles2.slide} style={{backgroundImage:'url("https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBsYW5lfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60")',backgroundSize:"cover"}}>
               <h2
                 style={michroma.style}
-                className={`text-center w-full text-[30px] ${colorPrimary}`}
+                className={`text-center w-full text-[40px] ${colorPrimary}`}
               >
-                Pour la sécurité de notre espace aérienne, faisons confiance à la R.V.A
+                Pour la sécurité de notre espace aérienne, <br />faisons confiance à la R.V.A
               </h2>
             </div>
           </SwiperSlide>
-
-          {/* <SwiperSlide><div className={styles2.slide}>Slide 4</div></SwiperSlide> */}
-        </Swiper>
+        </Swiper> */}
       </div>
       <div>
-        <div className="bg-slate-200 py-3">
+        <div className="bg-white py-3">
+          <div className="px-[200px]">
+            <SectionAccessoire />
+          </div>
+        </div>
+        <div className="bg-white py-3">
           <div className="px-[200px]">
             <SectionActu />
           </div>

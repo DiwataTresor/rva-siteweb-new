@@ -3,6 +3,7 @@ import { lora,pignon,michroma,inter } from '../style/fonts'
 import { titrePrincipal } from '../style/global'
 import nouvelleTour  from '@/assets/nouvelleTour.jpg';
 import Image from "next/image"
+import Link from "next/link"
 import DoubleImage from '../components/DoubleImage';
 import {bgSecondary} from "@/app/style/global.jsx"
 import avion  from '@/assets/avion.jpeg';
@@ -47,7 +48,13 @@ function SectionMotBienvenu() {
                     Fusce vulputate eleifend sapien. Nunc nonummy metus. Aliquam erat volutpat. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula.
                 </p>
                 <p className={`mt-10`}>
-                    Découvrez : <a href="#" className='text-blue-400 hover:decoration-underline'>Notre Mission</a> | <a href="#" className='text-blue-400 hover:decoration-underline'>Notre histoire</a>
+                    Découvrez : <Link href="#" className='text-blue-400 hover:decoration-underline mr-2 ml-2'>Notre Mission</Link> 
+                    | 
+                    <Link href="#" className='text-blue-400 hover:decoration-underline mr-2 ml-2'>Notre histoire</Link>
+                    | 
+                    <Link href="/aeroports" className='text-blue-400 hover:decoration-underline mr-2 ml-2'>Projets</Link>
+                    | 
+                    <Link href="/aeroports" className='text-blue-400 hover:decoration-underline mr-2 ml-2'>Nos aeroports</Link>
                 </p>
             </div>
         </div>

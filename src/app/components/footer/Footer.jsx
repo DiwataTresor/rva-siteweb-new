@@ -12,7 +12,7 @@ const titre=`text-[${bgSecondary}]`;
 const Footer = () => {
   return (
     <div className="pt-10">
-      <div className=' flex flex-row justify-center px-20 gap-10'>
+      <div className=' flex flex-row justify-between px-60 gap-10'>
         <div className="border-l-2 border-blue-400 text-blue-400 pl-6">
           <h2 className="text-3xl">Newsletters</h2>
           <p>Restez informé de toutes nos activités, inscrivez-vous maintenant</p>

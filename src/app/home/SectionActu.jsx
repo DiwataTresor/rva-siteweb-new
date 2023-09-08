@@ -10,6 +10,7 @@ import {
 } from "@nextui-org/react";
 import { titrePrincipal,bgPrimary,bgSecondary, colorSecondary, borderSecondary } from "../style/global";
 import { inter, lora, michroma,pignon } from '@/app/style/fonts'
+import Link from "next/link"
 
 
 const SectionActu = () => {
@@ -67,9 +68,9 @@ const SectionActu = () => {
                     repudiandae
                   </p>
                   <p className="text-center">
-                  <button className={`rounded-full px-3 py-1 border ${borderSecondary} ${colorSecondary} hover:bg-blue-800 hover:text-white hover:border-white text-[12px]`} style={{backgroundColor:`${colorSecondary}`}}>
+                  <Link  href="/actualites/1" className={`rounded-full px-3 py-1 border ${borderSecondary} ${colorSecondary} hover:bg-blue-800 hover:text-white hover:border-white text-[12px]`} style={{backgroundColor:`${colorSecondary}`}}>
                     Lire Article
-                  </button>
+                  </Link>
                   </p>
                 </div>
               </div>
@@ -80,10 +81,10 @@ const SectionActu = () => {
       <div className="justify-center text-center flex flex-row w-full">
         <>&nbsp;</>
         <div>
-          <a href="#" style={{backgroundColor:bgSecondary}} className="text-white py-3 px-7 rounded-full flex flex-row hover:cursor-pointer"> 
+          <Link href="/actualites" style={{backgroundColor:bgSecondary}} className="text-white py-3 px-7 rounded-full flex flex-row hover:cursor-pointer"> 
             <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#fb6a09"><path d="M3 5h8M3 12h13M3 19h18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  
             Lire tous les articles
-          </a>
+          </Link>
         </div>
       </div>
     </div>

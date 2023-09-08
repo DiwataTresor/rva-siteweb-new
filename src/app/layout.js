@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
       
         <Header />
-        <div className="w-full">
+        <div className="w-full min-h-[250px] bg-slate-200">
         {children}
         </div>
        <Footer />

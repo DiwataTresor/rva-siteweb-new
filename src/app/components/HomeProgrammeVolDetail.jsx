@@ -1,5 +1,6 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import {bgSecondary,bgPrimary,bgPrimaryColor} from "@/app/style/global.jsx"
 
 export default function HomeProgrammeVolDetail({ titre }) {
   const defaultContent =
@@ -7,7 +8,7 @@ export default function HomeProgrammeVolDetail({ titre }) {
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-center font-bold mb-2 flex flex-grow gap-3 bg-slate-600 rounded-lg py-3 px-2 text-white" style={{fontWeight:800}}>
+      <h1 className={`text-center font-bold mb-2 flex flex-grow gap-3 ${bgPrimaryColor} rounded-lg py-3 px-2 text-white`} style={{fontWeight:800}}>
         <svg
           width="24px"
           height="24px"

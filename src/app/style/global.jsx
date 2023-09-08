@@ -14,4 +14,8 @@ export const borderThird="border-[rgb(30 58 138 / 1)]";
 
 export const titrePrincipal="text-3xl text-[#d9ac80] mb-5"
 
+export const myContainer="px-[200px]";
+
+export const titreMenu = "uppercase tracking-wider text-gray-500 text-[13px] border-b";
+
 

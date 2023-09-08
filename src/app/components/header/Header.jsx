@@ -4,6 +4,7 @@ import Menu from "./Menu"
 import Image from "next/image"
 import { inter, michroma, poiret } from '../../style/fonts'
 import { bgPrimary } from "@/app/style/global";
+import Link from "next/link"
 
 
 const Header=()=>{
@@ -14,16 +15,16 @@ const Header=()=>{
     return (
        
 <nav className="bg-blue-900 border-gray-200 shadow-md w-screen" style={{backgroundColor:bgPrimary}}>
-    <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 shadow-md">
-        <a href="#" className="flex items-center">
+    <div className="flex flex-wrap items-center justify-between  mx-auto p-4 shadow-md">
+        <Link href="/home" className="flex items-center">
             <Image src={logoRva} className=" mr-3" width={130} height={120} alt="logo" />
             {/* <span className={"self-center text-2xl text-[#fb6a09]   whitespace-nowrap dark:text-yellow-300 "} style={inter.style}>Régie des Voies Aeriennes</span> */}
-            <span className={"self-center text-xl text-orange-300 font-bold  whitespace-nowrap dark:text-yellow-300 "} style={michroma.style}>Régie des Voies Aériennes</span>
-        </a>
+            <span className={"self-center text-[20px] text-orange-300 font-bold  whitespace-nowrap dark:text-yellow-300 "} style={michroma.style}>Régie des Voies Aériennes</span>
+        </Link>
         <div className="flex items-center md:order-2">
-            <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            <Link href="/login" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                 Se connecter
-            </a>
+            </Link>
             <a href="#" className="flex flex-row gap-1 text-white hover:text-[#fb6a09] dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-4 py-2 md:px-5 md:py-2.5 mr-1 md:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">
                 <span>
                 Fr
